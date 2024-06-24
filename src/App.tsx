@@ -25,43 +25,43 @@ const App = () => {
   const [selectedTab, setSelectedTab] = useState("AnalysisBoard");
 
   return (
-    <main className="flex h-[100vh] w-full p-4 gap-4">
-      <div className="w-[50%] h-[100%] flex flex-col gap-4">
+    <main className="flex md:flex-row flex-col h-[100vh] w-full p-4 gap-4">
+      <div className="w-[100%] md:w-[50%] h-[100%] flex flex-col gap-4">
         <div className="w-[100%] h-[30%] flex gap-4">
           <div className="flex flex-col gap-4 w-[60%] h-[100%]">
             <Card className="w-[100%] h-[100%] flex items-center justify-center">
-              <h1 className="text-white font-extrabold text-4xl">
+              <h1 className="text-white font-extrabold md:text-4xl text-lg text-center">
                 Muhammet Ali Yurtseven
               </h1>
             </Card>
-            <Card className="w-[100%] flex items-center justify-center gap-8">
+            <Card className="w-[100%] flex items-center justify-center sm:gap-6 md:gap-8 gap-4">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/muhammet_yrtsvn/"
               >
-                <InstagramIcon className="fill-white/60 transition-colors duration-300 hover:fill-white" />
+                <InstagramIcon className="fill-white/60 transition-colors w-8 md:w-14 sm:w-12 duration-300 hover:fill-white" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://wa.me/+905077153161"
               >
-                <WhatsAppIcon className="fill-white/60 transition-colors duration-300 hover:fill-white" />
+                <WhatsAppIcon className="fill-white/60 transition-colors w-8 md:w-14 sm:w-12 duration-300 hover:fill-white" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/channel/UCGjVELeuLxrwRjcpaH8kHag"
               >
-                <YoutubeIcon className="fill-white/60 transition-colors duration-300 hover:fill-white" />
+                <YoutubeIcon className="fill-white/60 transition-colors w-8 md:w-14 sm:w-12 duration-300 hover:fill-white" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.twitch.tv/muhammetyurtseven"
               >
-                <TwitchIcon className="fill-white/60 transition-colors duration-300 hover:fill-white" />
+                <TwitchIcon className="fill-white/60 transition-colors w-8 md:w-14 sm:w-12 duration-300 hover:fill-white" />
               </a>
             </Card>
           </div>
@@ -69,19 +69,19 @@ const App = () => {
             <img
               src={Fotograf}
               alt="fotograf"
-              className="object-cover rounded-full w-2/3"
+              className="object-cover md:rounded-full md:w-2/3 w-full"
             />
           </Card>
         </div>
-        <div className="flex gap-4 w-full h-[30%]">
+        <div className="flex gap-4 w-full md:h-[30%] h-max">
           <Card className="w-[100%] h-[100%] flex flex-col gap-4">
             <span className="flex justify-between w-full">
-              <h1 className="font-extrabold text-3xl text-white/80">
+              <h1 className="font-extrabold md:text-3xl text-white/80">
                 Hakkımda
               </h1>
             </span>
             <div className="w-full h-full">
-              <p className="text-white/70 ">
+              <p className="text-white/70 md:text-base text-sm">
                 Merhabalar ben Muhammet Ali YURTSEVEN,24 yaşındayım 5 yaşımdan
                 beri yarı aktif (son 4 sene tam aktif olmak üzere) satranç
                 oynuyorum. 8-11 yaş arası il birinciliğim ve bir kaç kez de il
@@ -120,8 +120,8 @@ const App = () => {
           </Carousel>
         </Card>
       </div>
-      <div className="w-[50%] flex flex-col gap-4">
-        <Card className="w-[100%] h-[10%] flex flex-col items-center justify-center px-4 py-0">
+      <div className="md:w-[50%] h-[100%] w-full flex-col gap-4 flex">
+        <Card className="w-[100%] h-[10%] flex-col items-center justify-center px-4 py-0 md:flex hidden">
           <Tab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         </Card>
         {selectedTab === "AnalysisBoard" && <AnalysisBoard />}

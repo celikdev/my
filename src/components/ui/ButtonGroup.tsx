@@ -19,7 +19,7 @@ const ButtonGroup = ({
   historyLength,
 }: ButtonGroupProps) => {
   return (
-    <Card className="w-1/4 flex items-center justify-center !bg-primary">
+    <Card className="md:w-1/4 w-1/2  flex items-center justify-center !bg-primary">
       <div className="flex items-center justify-between w-full">
         <button
           disabled={currentMoveIndex <= 0}

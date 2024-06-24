@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Chessground from "@react-chess/chessground";
 
 import "chessground/assets/chessground.base.css";
@@ -71,14 +71,17 @@ const AnalysisBoard = () => {
     return undefined;
   };
 
+  const responsiveWidth = window.innerWidth > 768 ? 680 : 320;
+  const responsiveHeight = window.innerWidth > 768 ? 680 : 320;
+
   return (
     <Card
       id="chessboard_wrapper"
-      className="w-[100%] h-[100%] flex flex-col items-center justify-center gap-4"
+      className="w-[100%] flex flex-col items-center justify-center gap-4"
     >
       <Chessground
-        width={680}
-        height={680}
+        width={responsiveWidth}
+        height={responsiveHeight}
         config={{
           check: checkStatus(),
           orientation: boardRotation ? "white" : "black",
