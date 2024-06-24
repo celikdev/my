@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Chessground from "@react-chess/chessground";
 
 import "chessground/assets/chessground.base.css";
