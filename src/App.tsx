@@ -38,7 +38,7 @@ const App = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.instagram.com/muhammetaliyurtseven/"
+                href="https://www.instagram.com/muhammet_yrtsvn/"
               >
                 <InstagramIcon className="fill-white/60 transition-colors duration-300 hover:fill-white" />
               </a>
