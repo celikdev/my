@@ -84,15 +84,15 @@ const App = () => {
               <p className="text-white/70 ">
                 Merhabalar ben Muhammet Ali YURTSEVEN,24 yaşındayım 5 yaşımdan
                 beri yarı aktif (son 4 sene tam aktif olmak üzere) satranç
-                oynuyorum. 8-11 yaş arası il birinciliğim ve bir kaç kezde il
-                derecelerim var. bir çok oyuncunun yardımcı antrenörlüğüne
+                oynuyorum. 8-11 yaş arası il birinciliğim ve bir kaç kez de il
+                derecelerim var. Bir çok oyuncunun yardımcı antrenörlüğüne
                 başladım. Elde ettiğim deneyimlerim ve hazırlıklarımla 2021-2022
                 seneleri arasında antrenörlük dersi ve staj görevi yaptım 2022
                 yılından beri aktif olarak ders vermekteyim. 1000 -1500 arası
-                öğrenciler ile çalışıyorum ve bu seviyes arası ile çalışmaktan
-                keyif alıyorum. genelde ilk hedefim öğrencimi 1 sene içerisinde
+                öğrenciler ile çalışıyorum ve bu seviye arası ile çalışmaktan
+                keyif alıyorum. Genelde ilk hedefim öğrencimi 1 sene içerisinde
                 iyi bir seviyeye getirip üst kademe antrenörler yardımı ile
-                türkiye satrancına katmak.
+                Türkiye satrancına katmak.
               </p>
             </div>
           </Card>
