@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, CarouselCard, Tab } from "./components/ui";
-import { AnalysisBoard } from "./components";
+import { About, AnalysisBoard } from "./components";
 import {
   InstagramIcon,
   TwitchIcon,
@@ -25,7 +25,7 @@ const App = () => {
   const [selectedTab, setSelectedTab] = useState("AnalysisBoard");
 
   return (
-    <main className="flex md:flex-row flex-col h-[100vh] w-full p-4 gap-4">
+    <main className="flex md:flex-row flex-col md:h-[100vh] w-full p-4 gap-4">
       <div className="w-[100%] md:w-[50%] h-[100%] flex flex-col gap-4">
         <div className="w-[100%] h-[30%] flex gap-4">
           <div className="flex flex-col gap-4 w-[60%] h-[100%]">
@@ -65,7 +65,7 @@ const App = () => {
               </a>
             </Card>
           </div>
-          <Card className="w-[40%] h-[100%] flex items-center justify-center">
+          <Card className="w-[40%] md:h-[100%] flex items-center justify-center">
             <img
               src={Fotograf}
               alt="fotograf"
@@ -97,12 +97,12 @@ const App = () => {
             </div>
           </Card>
         </div>
-        <Card className="w-[100%] h-[40%]">
+        <Card className="w-[100%] md:h-[40%] h-[20%]">
           <Carousel
             transition={0.5}
             show={1}
             slide={1}
-            className="h-[100%] w-full"
+            className="md:h-[100%] h-[10%] w-full"
             useArrowKeys
             hideArrows={false}
             infinite
@@ -124,7 +124,7 @@ const App = () => {
         <Card className="w-[100%] h-[10%] flex-col items-center justify-center px-4 py-0 md:flex hidden">
           <Tab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         </Card>
-        {selectedTab === "AnalysisBoard" && <AnalysisBoard />}
+        {selectedTab == "AnalysisBoard" ? <AnalysisBoard /> : <About />}
       </div>
     </main>
   );

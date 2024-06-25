@@ -4,11 +4,11 @@ interface CarouselCardProps {
 
 const CarouselCard = ({ source }: CarouselCardProps) => {
   return (
-    <div className="w-full h-[100%] flex justify-center ">
+    <div className="w-full md:h-[100%] flex justify-center ">
       <img
         src={source}
         alt="fotograf"
-        className="h-full w-full object-contain"
+        className="md:h-full md:w-full h-96 object-contain"
       />
     </div>
   );
