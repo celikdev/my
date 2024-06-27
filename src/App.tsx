@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, CarouselCard, Tab } from "./components/ui";
-import { About, AnalysisBoard } from "./components";
+import { About, AnalysisBoard, UKD } from "./components";
 import {
   InstagramIcon,
   LichessIcon,
@@ -109,28 +109,33 @@ const App = () => {
             </div>
           </Card>
         </div>
-        <Card className="w-[100%] md:h-[40%] h-[20%]">
-          <Carousel
-            transition={0.5}
-            show={1}
-            slide={1}
-            className="md:h-[100%] h-[10%] w-full"
-            useArrowKeys
-            hideArrows={false}
-            infinite
-            swiping
-            autoSwipe={3000}
-          >
-            <CarouselCard source={Ogrenci1} />
-            <CarouselCard source={Ogrenci2} />
-            <CarouselCard source={Ogrenci3} />
-            <CarouselCard source={Ogrenci4} />
-            <CarouselCard source={Ogrenci5} />
-            <CarouselCard source={Ogrenci6} />
-            <CarouselCard source={Ogrenci7} />
-            <CarouselCard source={Ogrenci8} />
-          </Carousel>
-        </Card>
+        <div className="flex md:h-[40%] h-[20%] gap-4">
+          <Card className="w-[60%] h-full flex flex-row items-center justify-center ">
+            <Carousel
+              transition={0.5}
+              show={1}
+              slide={1}
+              className="md:h-[100%] h-[10%] w-full"
+              useArrowKeys
+              hideArrows={false}
+              infinite
+              swiping
+              autoSwipe={3000}
+            >
+              <CarouselCard source={Ogrenci1} />
+              <CarouselCard source={Ogrenci2} />
+              <CarouselCard source={Ogrenci3} />
+              <CarouselCard source={Ogrenci4} />
+              <CarouselCard source={Ogrenci5} />
+              <CarouselCard source={Ogrenci6} />
+              <CarouselCard source={Ogrenci7} />
+              <CarouselCard source={Ogrenci8} />
+            </Carousel>
+          </Card>
+          <Card className="w-[40%] h-full items-center justify-center ">
+            <UKD />
+          </Card>
+        </div>
       </div>
       <div className="md:w-[50%] h-[100%] w-full flex-col gap-4 flex">
         <Card className="w-[100%] h-[10%] flex-col items-center justify-center px-4 py-0 md:flex hidden">

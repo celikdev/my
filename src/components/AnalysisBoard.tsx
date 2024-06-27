@@ -62,8 +62,6 @@ const AnalysisBoard = () => {
     return dests;
   };
 
-  console.log(chess.fen());
-
   const checkStatus = () => {
     if (chess.isCheck()) {
       return chess.turn() === "w" ? "white" : "black";

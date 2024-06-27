@@ -2,7 +2,6 @@ const images = import.meta.glob('./*.jpeg');
 
 const loadImages = async () => {
 
-    console.log("IMMMMMMMMM", images)
     const imageModules = await Promise.all(
         Object.entries(images).map(([path, resolver]) => resolver().then(mod => ({ path, mod })))
     );
