@@ -3,6 +3,7 @@ import { Card, CarouselCard, Tab } from "./components/ui";
 import { About, AnalysisBoard } from "./components";
 import {
   InstagramIcon,
+  LichessIcon,
   TwitchIcon,
   WhatsAppIcon,
   YoutubeIcon,
@@ -62,6 +63,17 @@ const App = () => {
                 href="https://www.twitch.tv/muhammetyurtseven"
               >
                 <TwitchIcon className="fill-white/60 transition-colors w-8 md:w-14 sm:w-12 duration-300 hover:fill-white" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://lichess.org/@/MuhammetYurtseven"
+              >
+                <LichessIcon
+                  className="
+                fill-white/60 transition-colors w-8 h-8 md:w-14 md:h-14 sm:w-12 sm:h-12 duration-300 hover:fill-white
+                "
+                />
               </a>
             </Card>
           </div>
