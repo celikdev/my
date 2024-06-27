@@ -10,19 +10,6 @@ const Tab = ({
   return (
     <div className="flex w-full items-center gap-2 justify-center h-3/5 border-2 p-1 text-sm rounded-xl">
       <a
-        href="https://www.betulcemre.com/ukd_bcy/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex w-1/2 items-center transition-colors duration-300 hover:bg-white hover:text-primary group h-full justify-center font-semibold text-white rounded-lg"
-      >
-        UKD Hesaplama{" "}
-        <OpenIcon
-          width="20"
-          height="20"
-          className="ml-2 fill-white transition-colors duration-300 group-hover:fill-primary"
-        />
-      </a>
-      <a
         href="https://ukd.tsf.org.tr/ukdsorgulama.php"
         target="_blank"
         rel="noopener noreferrer"
